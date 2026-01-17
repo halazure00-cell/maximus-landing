@@ -6,19 +6,21 @@
 
 :root {
   /* Colors - Light Theme */
-  --ui-primary: #3b82f6;
-  --ui-primary-strong: #2563eb;
-  --ui-primary-soft: #dbeafe;
-  --ui-background: #ffffff;
-  --ui-surface: #f9fafb;
-  --ui-surface-muted: #f3f4f6;
+  --ui-primary: #ffd54a;
+  --ui-primary-strong: #f5c91d;
+  --ui-primary-soft: #fff4c2;
+  --ui-background: #f3f4f6;
+  --ui-surface: #ffffff;
+  --ui-surface-muted: #f7f7f7;
   --ui-text: #111827;
   --ui-muted: #6b7280;
   --ui-border: #e5e7eb;
   --ui-success: #10b981;
+  --ui-success-soft: #dcfce7;
   --ui-danger: #ef4444;
   --ui-warning: #f59e0b;
   --ui-info: #3b82f6;
+  --ui-info-soft: #dbeafe;
   --ui-inverse: #ffffff;
   --ui-overlay: rgba(0, 0, 0, 0.5);
 
@@ -40,19 +42,21 @@
 
 .dark {
   /* Colors - Dark Theme */
-  --ui-primary: #60a5fa;
-  --ui-primary-strong: #3b82f6;
-  --ui-primary-soft: #1e3a8a;
+  --ui-primary: #ffd54a;
+  --ui-primary-strong: #f5c91d;
+  --ui-primary-soft: #3b2f12;
   --ui-background: #0f172a;
-  --ui-surface: #1e293b;
-  --ui-surface-muted: #334155;
-  --ui-text: #f1f5f9;
-  --ui-muted: #94a3b8;
-  --ui-border: #334155;
+  --ui-surface: #111827;
+  --ui-surface-muted: #1f2937;
+  --ui-text: #f9fafb;
+  --ui-muted: #9ca3af;
+  --ui-border: #1f2937;
   --ui-success: #34d399;
+  --ui-success-soft: #14532d;
   --ui-danger: #f87171;
   --ui-warning: #fbbf24;
   --ui-info: #60a5fa;
+  --ui-info-soft: #1e3a8a;
   --ui-inverse: #0f172a;
   --ui-overlay: rgba(0, 0, 0, 0.7);
 }

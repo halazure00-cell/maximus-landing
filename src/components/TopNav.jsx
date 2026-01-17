@@ -4,19 +4,8 @@ export default function TopNav() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Baca dari localStorage saat mount
-    try {
-      const settings = localStorage.getItem('maximus_settings');
-      if (settings) {
-        const parsed = JSON.parse(settings);
-        if (parsed.darkMode === true) {
-          setDarkMode(true);
-          document.documentElement.classList.add('dark');
-        }
-      }
-    } catch (error) {
-      console.error('Error reading theme settings:', error);
-    }
+    const isDark = document.documentElement.classList.contains('dark');
+    setDarkMode(isDark);
   }, []);
 
   const toggleDarkMode = () => {
@@ -41,7 +30,7 @@ export default function TopNav() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-ui-surface/95 backdrop-blur-sm border-b border-ui-border shadow-ui-sm">
+    <nav className="sticky top-0 z-50 bg-ui-surface backdrop-blur-sm border-b border-ui-border shadow-ui-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

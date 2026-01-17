@@ -40,10 +40,17 @@ export default function Footer() {
               Kontak
             </h4>
             <p className="text-ui-muted text-sm">
-              Email: <a href="mailto:support@maximus.app" className="hover:text-ui-primary transition-colors">support@maximus.app</a>
+              <a
+                href="https://wa.me/6285953937946?text=Halo%20MAXIMUS%2C%20saya%20butuh%20bantuan.%20%0A%0A%28Tulis%20kendala%20Anda%20di%20sini%29"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-ui-primary transition-colors"
+              >
+                WhatsApp Support
+              </a>
             </p>
             <p className="text-ui-muted text-sm mt-2">
-              Versi: 1.0.0-beta
+              Versi: v1.1.0
             </p>
           </div>
         </div>
