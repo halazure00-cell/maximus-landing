@@ -1,10 +1,10 @@
 import TopNav from '../components/TopNav';
 import Hero from '../components/Hero';
 import FeatureCards from '../components/FeatureCards';
-import OfflineFirst from '../components/OfflineFirst';
-import InstallSteps from '../components/InstallSteps';
-import FAQ from '../components/FAQ';
+import Benefits from '../components/Benefits';
+import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 export default function Landing() {
   return (
@@ -13,11 +13,11 @@ export default function Landing() {
       <main>
         <Hero />
         <FeatureCards />
-        <OfflineFirst />
-        <InstallSteps />
-        <FAQ />
+        <Benefits />
+        <CTASection />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

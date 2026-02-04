@@ -4,8 +4,21 @@ export default function TopNav() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const isDark = document.documentElement.classList.contains('dark');
-    setDarkMode(isDark);
+    // Check localStorage for saved preference
+    const saved = localStorage.getItem('maxxis_dark_mode');
+    if (saved !== null) {
+      const isDark = saved === 'true';
+      setDarkMode(isDark);
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } else {
+      // Default to system preference
+      const isDark = document.documentElement.classList.contains('dark');
+      setDarkMode(isDark);
+    }
   }, []);
 
   const toggleDarkMode = () => {
@@ -18,25 +31,20 @@ export default function TopNav() {
       document.documentElement.classList.remove('dark');
     }
 
-    // Simpan ke localStorage
-    try {
-      const settings = localStorage.getItem('maximus_settings');
-      const parsed = settings ? JSON.parse(settings) : {};
-      parsed.darkMode = newDarkMode;
-      localStorage.setItem('maximus_settings', JSON.stringify(parsed));
-    } catch (error) {
-      console.error('Error saving theme settings:', error);
-    }
+    // Save to localStorage
+    localStorage.setItem('maxxis_dark_mode', newDarkMode.toString());
   };
 
+  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20aplikasi%20MAXXIS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
+
   return (
-    <nav className="sticky top-0 z-50 bg-ui-surface backdrop-blur-sm border-b border-ui-border shadow-ui-sm">
+    <nav className="sticky top-0 z-50 bg-ui-surface/80 backdrop-blur-md border-b border-ui-border shadow-ui-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-display font-bold text-ui-primary">
-              MAXIMUS
+              MAXXIS
             </h1>
           </div>
 
@@ -59,22 +67,14 @@ export default function TopNav() {
               )}
             </button>
 
-            {/* Install Button */}
+            {/* WhatsApp CTA Button */}
             <a
-              href="#install"
-              className="hidden sm:inline-flex px-4 py-2 rounded-ui-md bg-ui-surface-muted hover:bg-ui-border text-ui-text font-medium transition-colors"
-            >
-              Install
-            </a>
-
-            {/* Buka App Button */}
-            <a
-              href="https://maximus-beta.vercel.app/"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-ui-md bg-ui-primary hover:bg-ui-primary-strong text-white font-medium shadow-ui-sm transition-all hover:shadow-ui-md"
+              className="px-4 py-2 rounded-ui-md bg-ui-primary hover:bg-ui-primary-hover text-gray-900 font-medium shadow-ui-sm transition-all hover:shadow-ui-md"
             >
-              Buka App
+              Hubungi Admin
             </a>
           </div>
         </div>
