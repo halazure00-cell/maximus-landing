@@ -1,64 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Colors - Light Theme */
-  --ui-primary: #ffd54a;
-  --ui-primary-strong: #f5c91d;
-  --ui-primary-soft: #fff4c2;
-  --ui-background: #f3f4f6;
-  --ui-surface: #ffffff;
-  --ui-surface-muted: #f7f7f7;
-  --ui-text: #111827;
-  --ui-muted: #6b7280;
-  --ui-border: #e5e7eb;
-  --ui-success: #10b981;
-  --ui-success-soft: #dcfce7;
-  --ui-danger: #ef4444;
-  --ui-warning: #f59e0b;
-  --ui-info: #3b82f6;
-  --ui-info-soft: #dbeafe;
-  --ui-inverse: #ffffff;
-  --ui-overlay: rgba(0, 0, 0, 0.5);
+  /* Primary Colors - Maxim Yellow (#FFD600 = HSL 51 100% 50%) */
+  --primary-hue: 51;
+  --primary-sat: 100%;
+  --primary-light: 50%;
+  
+  /* HSL Color Variables - Light Theme */
+  --ui-primary: hsl(var(--primary-hue), var(--primary-sat), var(--primary-light));
+  --ui-primary-strong: hsl(var(--primary-hue), 95%, 45%);
+  --ui-primary-soft: hsl(var(--primary-hue), 100%, 95%);
+  --ui-primary-hover: hsl(var(--primary-hue), 100%, 45%);
+  
+  /* Neutral Colors - Light Theme */
+  --ui-background: hsl(220, 20%, 97%);
+  --ui-surface: hsl(0, 0%, 100%);
+  --ui-surface-muted: hsl(220, 15%, 96%);
+  --ui-text: hsl(220, 30%, 10%);
+  --ui-text-muted: hsl(220, 10%, 45%);
+  --ui-border: hsl(220, 15%, 90%);
+  
+  /* Semantic Colors */
+  --ui-success: hsl(142, 76%, 36%);
+  --ui-success-soft: hsl(142, 76%, 95%);
+  --ui-danger: hsl(0, 84%, 60%);
+  --ui-danger-soft: hsl(0, 84%, 95%);
+  --ui-warning: hsl(38, 92%, 50%);
+  --ui-warning-soft: hsl(38, 92%, 95%);
+  --ui-info: hsl(217, 91%, 60%);
+  --ui-info-soft: hsl(217, 91%, 95%);
+  
+  /* Overlay */
+  --ui-overlay: hsla(220, 30%, 10%, 0.5);
 
   /* Border Radius */
   --ui-radius-sm: 0.375rem;
   --ui-radius-md: 0.5rem;
   --ui-radius-lg: 0.75rem;
   --ui-radius-xl: 1rem;
+  --ui-radius-2xl: 1.5rem;
 
   /* Box Shadow */
   --ui-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --ui-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
   /* Fonts */
-  --ui-font-body: 'Inter', system-ui, -apple-system, sans-serif;
-  --ui-font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --ui-font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ui-font-display: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .dark {
-  /* Colors - Dark Theme */
-  --ui-primary: #ffd54a;
-  --ui-primary-strong: #f5c91d;
-  --ui-primary-soft: #3b2f12;
-  --ui-background: #0f172a;
-  --ui-surface: #111827;
-  --ui-surface-muted: #1f2937;
-  --ui-text: #f9fafb;
-  --ui-muted: #9ca3af;
-  --ui-border: #1f2937;
-  --ui-success: #34d399;
-  --ui-success-soft: #14532d;
-  --ui-danger: #f87171;
-  --ui-warning: #fbbf24;
-  --ui-info: #60a5fa;
-  --ui-info-soft: #1e3a8a;
-  --ui-inverse: #0f172a;
-  --ui-overlay: rgba(0, 0, 0, 0.7);
+  /* HSL Color Variables - Dark Theme */
+  --ui-primary: hsl(var(--primary-hue), var(--primary-sat), var(--primary-light));
+  --ui-primary-strong: hsl(var(--primary-hue), 95%, 55%);
+  --ui-primary-soft: hsl(var(--primary-hue), 60%, 15%);
+  --ui-primary-hover: hsl(var(--primary-hue), 100%, 55%);
+  
+  /* Neutral Colors - Dark Theme */
+  --ui-background: hsl(220, 25%, 8%);
+  --ui-surface: hsl(220, 20%, 12%);
+  --ui-surface-muted: hsl(220, 18%, 16%);
+  --ui-text: hsl(220, 15%, 95%);
+  --ui-text-muted: hsl(220, 10%, 60%);
+  --ui-border: hsl(220, 18%, 20%);
+  
+  /* Semantic Colors - Dark Theme */
+  --ui-success: hsl(142, 76%, 45%);
+  --ui-success-soft: hsl(142, 60%, 12%);
+  --ui-danger: hsl(0, 84%, 65%);
+  --ui-danger-soft: hsl(0, 60%, 12%);
+  --ui-warning: hsl(38, 92%, 55%);
+  --ui-warning-soft: hsl(38, 70%, 12%);
+  --ui-info: hsl(217, 91%, 65%);
+  --ui-info-soft: hsl(217, 70%, 12%);
+  
+  /* Overlay */
+  --ui-overlay: hsla(220, 30%, 5%, 0.7);
 }
 
 body {
@@ -68,8 +89,79 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--ui-background);
   color: var(--ui-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
 }

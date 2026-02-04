@@ -3,38 +3,42 @@ export default function FeatureCards() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
         </svg>
       ),
-      title: 'Hitung Bersih Per Order',
-      description: 'Input pendapatan kotor, potongan otomatis dihitung, langsung tahu pendapatan bersih setiap order.'
+      emoji: '🗺️',
+      title: 'Anti Kukurilingan Teu Puguh',
+      description: 'Pernah nggak, Kang? Udah melipir jauh dari Cibiru ke tengah kota, eh ternyata zonk sepi orderan? Bensin abis, tenaga kebuang. Di aplikasi ini ada fitur **Peta Hotspot**. Canggihnya, ini bisa dipake biarpun sinyal lagi bapuk atau kuota lagi sekarat (offline). Jadi Akang tau kudu ngetem di mana tanpa harus buang bensin muter-muter nggak jelas.'
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
         </svg>
       ),
-      title: 'Catat Pengeluaran Cepat',
-      description: 'Bensin, parkir, makan, atau lainnya. Satu klik, data tersimpan, tanpa ribet.'
+      emoji: '⭐',
+      title: 'Jaga Akun Biar Tetep "Gacor"',
+      description: 'Urusan rating mah sensitif pisan, Kang. Salah dikit, anyepnya bisa berhari-hari. Di sini Akang bisa pantau **Kesehatan Akun** secara *real-time*. Kalau performa mulai turun, aplikasinya bakal ngasih tau kudu ngapain biar balik lagi jadi akun "Prioritas". Biar dapur tetep ngebul, Kang.'
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
         </svg>
       ),
-      title: 'Rekap Harian & Bulanan',
-      description: 'Pantau performa harian atau bulanan dengan grafik dan ringkasan yang jelas.'
+      emoji: '💬',
+      title: 'Template Chat Sat-Set Wat-Wet',
+      description: 'Lagi ribet pake sarung tangan atau lagi neduh pas hujan, males banget kan kalau kudu ngetik panjang lebar? Saya siapin **Script Chat Template**. Tinggal klik *copy*, terus kirim. Isinya udah diset sopan kayak "Ditunggu sesuai titik ya Teh/A". Praktis, *customer* senang, Akang juga tenang.'
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
         </svg>
       ),
-      title: 'Offline Penuh + Auto Sync',
-      description: 'Semua fitur berfungsi tanpa internet. Data otomatis sinkron saat online kembali.'
+      emoji: '🚨',
+      title: 'Tombol Darurat (Amit-Amit Jabang Bayi)',
+      description: 'Kita tau Bandung kalau udah malem kadang suka rawan. Keamanan Akang itu nomor satu. Saya pasang fitur **Emergency Contact**. Kalau (amit-amit) ada kejadian nggak enak di jalan, tinggal satu klik buat ngubungin keluarga atau kawan basecamp terdekat.'
     }
   ];
 
@@ -43,26 +47,34 @@ export default function FeatureCards() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-ui-text mb-4">
-            Fitur Utama
+            Fitur Andalan
           </h3>
-          <p className="text-lg text-ui-muted max-w-2xl mx-auto">
-            Dirancang khusus untuk memudahkan driver dalam mengelola keuangan sehari-hari
+          <p className="text-lg text-ui-text-muted max-w-2xl mx-auto">
+            Dirancang khusus buat nemenin Akang di jalan, biar narik lebih tenang
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-ui-surface border border-ui-border rounded-ui-xl p-6 shadow-ui-sm hover:shadow-ui-md transition-all hover:-translate-y-1"
+              className="group bg-ui-surface border border-ui-border rounded-ui-2xl p-8 shadow-ui-sm hover:shadow-ui-lg transition-all duration-300 hover:-translate-y-1"
+              style={{
+                animationDelay: `${index * 100}ms`,
+              }}
             >
-              <div className="w-14 h-14 rounded-ui-lg bg-ui-primary-soft text-ui-primary flex items-center justify-center mb-4">
-                {feature.icon}
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-14 h-14 rounded-ui-lg bg-ui-primary-soft text-ui-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  {feature.icon}
+                </div>
+                <span className="text-3xl" role="img" aria-label={feature.title}>
+                  {feature.emoji}
+                </span>
               </div>
-              <h4 className="text-xl font-semibold text-ui-text mb-3">
+              <h4 className="text-xl font-bold text-ui-text mb-3">
                 {feature.title}
               </h4>
-              <p className="text-ui-muted leading-relaxed">
+              <p className="text-ui-text-muted leading-relaxed text-sm">
                 {feature.description}
               </p>
             </div>
