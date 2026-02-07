@@ -46,7 +46,7 @@ export default function ProofSection() {
     }
 
     return () => observer.disconnect();
-  }, [hasAnimated]);
+  }, []); // Run only once on mount
 
   const animateStats = () => {
     const duration = 2000;
@@ -78,7 +78,7 @@ export default function ProofSection() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const goToTestimoni = (index) => {
     setCurrentTestimoni(index);
