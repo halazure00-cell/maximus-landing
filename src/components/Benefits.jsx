@@ -43,7 +43,7 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-ui-text mb-4">
-            Kenapa Harus MAXXIS?
+            Kenapa Harus MAXXISS?
           </h3>
           <p className="text-lg text-ui-text-muted max-w-2xl mx-auto">
             Lebih dari sekedar aplikasi, ini mitra setia Akang di jalan

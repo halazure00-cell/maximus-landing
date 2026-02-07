@@ -1,5 +1,5 @@
 export default function FloatingWhatsApp() {
-  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20aplikasi%20MAXXIS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
+  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20MAXXISS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
 
   return (
     <a
