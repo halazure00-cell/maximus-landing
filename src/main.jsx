@@ -5,7 +5,7 @@ import Landing from './pages/Landing.jsx'
 
 const applyStoredTheme = () => {
   try {
-    const settings = localStorage.getItem('maximus_settings')
+    const settings = localStorage.getItem('maxxiss_settings')
     if (!settings) return
     const parsed = JSON.parse(settings)
     if (parsed.darkMode === true) {

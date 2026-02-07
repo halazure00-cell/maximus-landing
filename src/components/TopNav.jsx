@@ -5,7 +5,7 @@ export default function TopNav() {
 
   useEffect(() => {
     // Check localStorage for saved preference
-    const saved = localStorage.getItem('maxxis_dark_mode');
+    const saved = localStorage.getItem('maxxiss_dark_mode');
     if (saved !== null) {
       const isDark = saved === 'true';
       setDarkMode(isDark);
@@ -32,10 +32,10 @@ export default function TopNav() {
     }
 
     // Save to localStorage
-    localStorage.setItem('maxxis_dark_mode', newDarkMode.toString());
+    localStorage.setItem('maxxiss_dark_mode', newDarkMode.toString());
   };
 
-  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20aplikasi%20MAXXIS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
+  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20MAXXISS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
 
   return (
     <nav className="sticky top-0 z-50 bg-ui-surface/80 backdrop-blur-md border-b border-ui-border shadow-ui-sm">
@@ -44,7 +44,7 @@ export default function TopNav() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-display font-bold text-ui-primary">
-              MAXXIS
+              MAXXISS
             </h1>
           </div>
 

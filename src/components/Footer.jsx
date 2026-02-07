@@ -1,6 +1,6 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20aplikasi%20MAXXIS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
+  const whatsappUrl = "https://wa.me/6285953937946?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20MAXXISS.%20Boleh%20minta%20info%20lebih%20lanjut%3F";
 
   return (
     <footer className="bg-ui-surface border-t border-ui-border py-12">
@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold text-ui-primary mb-3">
-              MAXXIS
+              MAXXISS
             </h3>
             <p className="text-ui-text-muted text-sm leading-relaxed">
               Aplikasi khusus untuk driver Bandung. Dibuat dengan hati, untuk kemudahan dan keamanan Akang di jalan.
@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-ui-border pt-8 text-center text-sm text-ui-text-muted">
-          <p>© {currentYear} MAXXIS. Dibuat dengan ❤️ untuk driver Bandung.</p>
+          <p>© {currentYear} MAXXISS. Dibuat dengan ❤️ untuk driver Bandung.</p>
         </div>
       </div>
     </footer>
